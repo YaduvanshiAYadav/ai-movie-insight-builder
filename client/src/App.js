@@ -6,6 +6,7 @@ function App() {
   const [movie, setMovie] = useState(null);
   const [loading, setLoading] = useState(false);
 
+  const API_BASE_URL = "https://ai-movie-insight-builder-1pxp.onrender.com";
   const searchMovie = async () => {
     if (!query) return;
     setLoading(true);
